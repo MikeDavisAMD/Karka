@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on change Task</title>
+</head>
+<body>
+    <div>
+        <h1 id="intro">Hello World</h1>
+        <input type="text" id="name" placeholder="Enter Text Here" onchange="handle_input()">
+    </div>
+    <script>
+        function handle_input(){
+            var a=document.getElementById("name").value
+            var b=document.getElementById("intro")
+            b.innerHTML=a
+        }
+    </script>
+</body>
+</html>

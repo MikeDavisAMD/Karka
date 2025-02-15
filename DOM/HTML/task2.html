@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp" type="text" placeholder="Enter items of list">
+    <button id="btn" onclick="clickHandle()">SUBMIT</button>
+    <div style="display: flex; gap: 20px;">
+        <ul id="ulist">
+
+        </ul>
+        <ol id="olist">
+    
+        </ol> 
+    </div>
+</body>
+<script>
+    function clickHandle(){
+        var a=document.getElementById("inp").value
+        var ol=document.getElementById("olist")
+        var ul=document.getElementById("ulist")
+        var arr=[ol,ul]
+        var oli=document.createElement("li")
+        var uli=document.createElement("li")
+        oli.innerHTML=a
+        ol.appendChild(oli)
+        uli.innerHTML=a
+        ul.appendChild(uli)
+        document.getElementById("inp").value=""
+    }
+</script>
+</html>

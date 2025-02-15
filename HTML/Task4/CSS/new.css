@@ -1,0 +1,19 @@
+.main{
+    height: 500px;
+    width: 1000px;
+    background-color: aquamarine;
+    background-image: url("../Image/Zoro.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    position: relative;
+}
+.text{
+    position: absolute;
+    color: green;
+    font-size: 7cap;
+    text-shadow: 4px 4px 8px green;
+    top: 40%;
+    left: 4%;
+}

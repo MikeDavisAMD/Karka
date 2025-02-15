@@ -1,0 +1,156 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 350px;
+    width: 75%;
+    background-color: rgb(216, 215, 215);
+    position: relative;
+    margin: 8% 12%;
+    border-radius: 35px;
+    box-shadow: 10px 10px 6px rgb(154, 153, 153);
+    overflow: hidden;
+}
+.barcode{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    left: -2%;
+}
+.flighticon1{
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: 60%;
+    left: 0.6%;
+}
+.flighticon1 img{
+    height: 120px;
+    width: 120px;
+}
+.qrcode{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
+.qrcode img{
+    height: 100px;
+    width: 100px;
+}
+.header{
+    height: 60px;
+    display: flex;
+    background-color: green;
+    position: relative;
+}
+.header .secA{
+    flex: 7;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 30px;
+    color: aliceblue;
+}
+.header .secB{
+    flex: 3;
+    height: 60px;
+    border-left: 4px dashed rgb(57, 88, 7);
+    position: relative;
+}
+.header .secB .flighticon2{
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 8%;
+    right: 10%;
+}
+.header .secB .flighticon2 img{
+    height: 60px;
+    width: 60px;
+}
+.body{
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+.body .secA{
+    flex: 7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.body .secA .line1{
+    display: flex;
+    gap: 100px;
+    padding-left: 20%;
+}
+.body .secA .line11,.body .secA .line12{
+    padding-top: 10px;
+}
+.body .secA .line2{
+    display: flex;
+    gap: 110px;
+    padding-left: 20%;
+}
+.body .secA .line3{
+    display: flex;
+    padding-left: 20%;
+    gap: 30px;
+}
+.body .secA .line21{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.body .secA .line22{
+    padding-top: 20px;
+}
+.body .secA .line4{
+    display: flex;
+    padding-left: 20%;
+    gap: 5px;
+}
+.body .secB{
+    flex: 3;
+    border-left: 4px dashed rgb(57, 88, 7);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.body .secB .line1{
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap: 60px;
+}
+.body .secB .line2{
+    padding-top: 25px;
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+}
+.body .secB .line3, .body .secB .line4{
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+.body .secB .line5{
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+.body .secB .line5 .line51{
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    height: 40px;
+    display: flex;
+    background-color: green;
+}
+.footer .secA{
+    flex: 7;
+}
+.footer .secB{
+    flex: 3;
+    border-left: 4px dashed rgb(57, 88, 7);
+}

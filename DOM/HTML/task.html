@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+</head>
+<body>
+    <div>
+        <h1>ADD A=10 and B=20</h1>
+        <button onclick="add()">ADD</button><br>
+    </div>
+    <div>
+        <Label>What is your name</Label><br>
+        <input type="text" id="name"><br>
+        <button onclick="handle_click()">Enter</button>
+    </div>
+    <script>
+        function add(){
+            let a=10
+            let b=20
+            console.log(a+b)
+        }
+        function handle_click(){
+            var a = document.getElementById("name").value
+            console.log(a)
+        }
+    </script>
+</body>
+</html>

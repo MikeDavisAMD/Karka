@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    display: flex;
+    padding-top: 20px;
+}
+.header .title {
+    height: 70px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(108, 245, 186);
+    padding-left: 10%;
+    flex: 6;
+} 
+.header .home{
+    flex: 1;
+    padding-top: 10px;
+}
+.header .service{
+    flex: 1;
+    padding-top: 10px;
+}
+.header .portfolio{
+    flex: 1;
+    padding-top: 10px;
+}
+.header .team{
+    flex: 1;
+    padding-top: 10px;
+}
+.header .blog{
+    flex: 1;
+    padding-top: 10px;
+}
+.header .contact{
+    flex: 1;
+    padding-top: 10px;
+}
+.image{
+    position: relative;
+    height: 400px;
+}
+.image img{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+.image .fg{
+    position: absolute;
+    height: 400px;
+    width: 1260px;
+    background-color: rgb(108, 245, 186);
+    opacity: 0.5;
+}
+.image .head{
+    font-size: 30px;
+    color: azure;
+    position: absolute;
+    top: 45%;
+    right: 40%;
+}
+.image .subhead{
+    width: 450px;
+    text-align: center;
+    color: azure;
+    position: absolute;
+    top: 65%;
+    right: 47%;
+}
+.image .button{
+    position: absolute;
+    top: 80%;
+    right: 60%;
+}
+.image .button a{
+    text-decoration: none;
+    color: azure;
+}
+.image .button button{
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid azure;
+}
+.image .arrlft{
+    position: absolute;
+    rotate: 180deg;
+    left: 10px;
+    top: 48%;
+}
+.image .arr8{
+    position: absolute;
+    right: 10px;
+    top: 48%;
+}
+.iconopts{
+    display: flex;
+    position: relative;
+    height: 360px;
+    padding-top: 40px;
+}
+.iconopts .icons{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+.iconopts .icons .circle1,.circle2,.circle3,.circle4{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 5px solid rgb(108, 245, 186);
+}
+.iconopts .icons .circle1 i{
+    position: absolute;
+    top: 72px;
+    left: 137px;
+}
+.iconopts .icons .circle2 i{
+    position: absolute;
+    top: 72px;
+    left: 452px;
+}
+.iconopts .icons .circle3 i{
+    position: absolute;
+    top: 72px;
+    right: 450px;
+}
+.iconopts .icons .circle4 i{
+    position: absolute;
+    top: 72px;
+    right: 134px;
+}
+.iconopts .icons button{
+    padding: 10px 20px;
+    background-color: rgb(108, 245, 186);
+    color: white;
+    font-weight: bolder;
+}
+.portfolio1{
+    height: 600px;
+    background-color: rgb(190, 188, 188);
+    position: relative;
+}
+.portfolio1 .header{
+    height: 70px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.portfolio1 .btn{
+    display: flex;
+    justify-content: center;
+}
+.portfolio1 .imgs{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 20px solid transparent;
+}
+.portfolio1 img{
+    height: 200px;
+    width: 250px;
+}
+.portfolio1 button{
+    padding: 10px 20px;
+    background-color: rgb(108, 245, 186);
+    color: white;
+    font-weight: bolder;
+}

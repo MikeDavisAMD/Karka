@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠</title>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <script>
+        const details={
+            Name : "Mike Davis",
+            Age : "24",
+            Place : "Nagercoil",
+            Skills : ["HTML","CSS","JavaScript"],
+            Greet: function(){
+                return("Hello World")
+            }
+        }
+        let div=document.getElementById("div")
+        let p=document.createElement("p")
+        p.innerHTML=`NAME : ${details.Name} AGE : ${details.Age}`
+        div.appendChild(p)
+    </script>
+</body>
+</html>

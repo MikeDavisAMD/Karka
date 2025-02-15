@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp" type="text" placeholder="Enter The text">
+    <button id="submit" onclick="clickHandle()">SUBMIT</button>
+    <div id="div">
+
+    </div>
+</body>
+<script>
+    function clickHandle(){
+        var a=document.getElementById("inp").value
+        var b=document.getElementById("div")
+        var h=document.createElement("h1")
+        h.innerHTML=a
+        b.appendChild(h)
+        document.getElementById("inp").value=""
+    }
+</script>
+</html>

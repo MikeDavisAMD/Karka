@@ -1,0 +1,224 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 250px;
+    width: 75%;
+    position: relative;
+    margin: 10% 12%;
+    border-radius: 35px;
+    box-shadow: 0px 3px 6px brown;
+    overflow: hidden;
+}
+.barcode1{
+    transform: rotate(90deg);
+    position: absolute;
+    left: -3%;
+    bottom: 35%;
+}
+.barcode2{
+    position: absolute;
+    right: 14%;
+    bottom: 12%;
+}
+.dot1{
+    position: absolute;
+    top: -7px;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot2{
+    position: absolute;
+    top: 19px;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot3{
+    position: absolute;
+    top: 47px;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot4{
+    position: absolute;
+    top: 30%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot5{
+    position: absolute;
+    top: 42%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot6{
+    position: absolute;
+    top: 54%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot7{
+    position: absolute;
+    top: 66%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot8{
+    position: absolute;
+    top: 77%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot9{
+    position: absolute;
+    top: 87%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot10{
+    position: absolute;
+    top: 97%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.box1{
+    position: absolute;
+    height: 50px;
+    width: 30%;
+    background-color: azure;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    bottom: 30%;
+    right: 40%;
+}
+.box1 p{
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ec0909;
+}
+.box1 .flighticon{
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+.header{
+    height: 60px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    display: flex;
+    position: relative;
+}
+.header .part1{
+    flex: 7;
+    background-color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+.header .part1 p{
+    padding-left: 80px;
+    padding-top: 15px;
+    font-size: 25px;
+}
+.header .part2{
+
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: brown;
+}
+.body{
+    display: flex;
+    height: 160px;
+    background-color: rgb(220, 218, 218);
+}
+.body .sideA{
+    flex: 7;
+    background-image: url('../Image/worldmap-removebg-preview.png');
+    background-size: 500px 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sideA .sec1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.sideA .sec1 .sec1a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 20px;
+}
+.sideA .sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    padding-top: 20px;
+    height: 40px;
+}
+.sideA .sec3{
+    display: flex;
+    gap: 95px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 108px;
+}
+.body .sideB{
+    flex: 3;
+    padding-left: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sideB .sec2{
+    display: flex;
+    gap: 40px;
+}
+.footer{
+    height: 30px;
+    background-color: red;
+}

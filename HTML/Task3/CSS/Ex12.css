@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 900px;  
+    background-color: gray;
+    justify-content: center;
+    position: relative;
+}
+.header{
+    text-shadow: 4px 4px 4px black;
+    color: aliceblue;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 20px;
+    height: 70px;
+}
+.navbar{
+    background-color: rgb(252, 100, 252);
+    width: 80%;
+    height: 35px;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+input{
+    margin-top: 2px;
+}
+button{
+    background-color: black;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer{
+    height: 65px;
+    padding-top: 35px;
+    padding-left: 10px;
+    position: absolute;
+    width: 79.25%;
+    top: 87%;
+    left: 10%;
+    background-color: azure;
+}
+.body{
+    position: absolute;
+    background-color: aliceblue;
+    height: 625px;
+    border: 10px solid gray;
+    top: 15.5%;
+    left: 9.2%;
+    width: 80%;
+    display: flex;
+}
+.contentA{
+    flex: 8;
+    border-right: 10px solid gray;
+}
+.contentA .arc{
+    display: flex;
+    flex-direction: column;
+}
+.contentA .arc h1{
+    font-family: cursive;
+    font-style: italic;
+    height: 70px;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.contentA .arc p{
+    height: 50px;
+    padding-left: 10px;
+}
+.contentA .section{
+    display: flex;
+    flex-direction: column;
+}
+.contentA .section{
+    gap: 10px;
+    padding-left: 10px;
+}
+.contentA .section h1{
+    height: 70px;
+    padding-top: 30px;
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
+.contentB{
+    flex: 2;
+    background-color: rgb(252, 100, 252);
+}
+.contentB h1{
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
+.contentB ul{
+    padding-left: 40px;
+    padding-top: 20px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name: </label>
+    <input type="text" class="details" id="name">
+    <label>Age: </label>
+    <input type="number" class="details" id="age">
+    <label>Place: </label>
+    <input type="text" class="details" id="place">
+    <button onclick="clickHandle()">SUBMIT</button>
+    <div id="div">
+
+    </div>
+    <script>
+        function clickHandle(){
+            let name=document.getElementById("name").value
+            let age=document.getElementById("age").value
+            let place=document.getElementById("place").value
+            const info={
+                Name : name,
+                Age : age,
+                Place : place
+            }
+            console.log(info) 
+        }
+    </script>
+</body>
+</html>

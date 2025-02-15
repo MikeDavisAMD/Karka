@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.fullmain{
+    height: 300px;
+    border: 2px solid black;
+}
+.header{
+    height: 50px;
+    background-color: burlywood;
+    text-align: center;
+}
+.header h1{
+    padding-top: 5px;
+}
+.nav{
+    height: 50px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.nav h1{
+    padding-top: 5px;
+}
+.fullsection1{
+    height: 150px;
+}
+.sectionarticle{
+    height: 150px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.sectionarticle .section{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 50px;
+    background-color: chartreuse;
+}
+.sectionarticle .article{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 50px;
+    background-color: aquamarine;
+}
+.fullsection1 .aside{
+    vertical-align: top;
+    padding-top: 50px;
+    display: inline-block;
+    width: 49%;
+    height: 100px;
+    background-color: cadetblue;
+    text-align: center;
+}
+.fullsection{
+    height: 150px;
+}
+.fullsection .index{
+    display: inline-block;
+    width: 20%;
+    height: 100px;
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 50px;
+}
+.fullsection .section{
+    display: inline-block;
+    width: 79%;
+    height: 100px;
+    background-color: aqua;
+    padding-top: 50px;
+    text-align: center;
+
+}
+.fullsection3{
+    height: 100px;
+}
+.fullsection3 .main{
+    height: 70px;
+    display: inline-block;
+    width: 50%;
+    background-color: aqua;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 30px;
+}
+.fullsection3 .asidesection{
+    height: 100px;
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+.fullsection3 .aside3{
+    height: 45px;
+    padding-top: 5px;
+    background-color: coral;
+}
+.fullsection3 .section{
+    height: 45px;
+    padding-top: 5px;
+    background-color: aquamarine;
+}
+.aside{
+    height: 40px;
+    background-color: bisque;
+    padding-top: 10px;
+    text-align: center;
+}
+.menu{
+    height: 150px;
+    width: 20%;
+    display: inline-block;
+    background-color: cyan;
+    vertical-align: top;
+    padding-top: 100px;
+    text-align: center;
+}
+.mainrightfooter{
+    display: inline-block;
+    width: 79%;
+    text-align: center;
+}
+.mainrightfooter .main{
+    width: 60%;
+    height: 120px;
+    display: inline-block;
+    background-color: darkorange;
+    padding-top: 80px;
+}
+.mainrightfooter .right{
+    width: 39%;
+    height: 120px;
+    display: inline-block;
+    background-color: aquamarine;
+    padding-top: 80px;
+}
+.navi{
+    height: 40px;
+    text-align: center;
+    background-color: burlywood;
+}
+.intro{
+    height: 50px;
+    text-align: center;
+    background-color: chartreuse;
+    padding-top: 10px;
+}
+.mainside{
+    height: 150px;
+    text-align: center;
+}
+.maincon{
+    height: 100px;
+    width: 60%;
+    display: inline-block;
+    background-color: aqua;
+    padding-top: 50px;
+}
+.side{
+    height: 100px;
+    width: 39%;
+    display: inline-block;
+    background-color: aquamarine;
+    padding-top: 50px;
+}
+.footer{
+    height: 50px;
+    background-color: green;
+    color: azure;
+    text-align: center;
+}
+.footer h3{
+    padding-top: 10px;
+}

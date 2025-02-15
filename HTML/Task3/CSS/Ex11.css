@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 1200px;
+    border: 10px solid lightgray;
+}
+.mainheader {
+    text-align: center;
+    border-bottom: 10px solid lightgray;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.headtext {
+    height: 150px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+.linkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.linkbox .link1{
+    padding-left: 10px;
+}
+.linkbox .link4{
+    position: absolute;
+    left: 97%;
+}
+.mainbody{
+    height: 880px;
+    display: flex;
+}
+.mainbody .side1{
+    flex: 7;
+    border-right: 10px solid lightgray;
+    position: relative;
+}
+.mainbody .side1 .contentA{
+    height: 430px;
+    border-bottom: 10px solid lightgray;
+}
+.mainbody .side1 .contentB{
+    height: 440px;
+}
+.head{
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.desc{
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.img{
+    height: 200px;
+    width: 90%;
+    background-color: rgb(112, 112, 112);
+    margin-left: 2%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.para{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 80px;
+}
+.mainbody .side2{
+    flex: 3;
+}
+.mainbody .side2 .contentA{
+    height: 230px;
+    border-bottom: 10px solid lightgray;
+}
+.side2 .contentA .abt{
+    height: 45px;
+    padding: 5px 20px;
+}
+.side2 .contentA .p1{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.mainbody .side2 .contentB{
+    height: 370px;
+    border-bottom: 10px solid lightgray;
+}
+.side2 .contentB .post{
+    height: 45px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.im1{
+    height: 60px;
+    background-color: rgb(112, 112, 112);
+    width: 80%;
+    margin-left: 5%;
+    padding: 20px 10px;
+}
+.mainbody .side2 .contentC{
+    height: 150px;
+    border-bottom: 10px solid lightgray;
+}
+.side2 .contentC .follow{
+    height: 55px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.side2 .contentC .stxt{
+    height: 55px;
+    padding-left: 10px;
+}
+.mainbody .side2 .empty{
+    height: 100px;
+    background-color: lightgray;
+}
+
+.footer{
+    text-align: center;
+    height: 70px;
+    padding-top: 30px;
+    border-top: 10px solid lightgray;
+    background-color: rgb(182, 181, 181);
+}

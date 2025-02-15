@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add task</title>
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="Enter A value" id="a"><br><br>
+        <input type="number" placeholder="Enter B value" id="b"><br><br>
+        <button id="add" onclick="handle()">ADD</button>
+        <h1 id="out">
+
+        </h1>
+    </div>
+    <script>
+        function handle(){
+            let a=Number(document.getElementById("a").value)
+            let b=Number(document.getElementById("b").value)
+            let c=document.getElementById("out")
+            c.innerHTML=a+b
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.fullmain{
+    height: 600px;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
+}
+.header{
+    height: 70px;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 30px;
+}
+.navbar{
+    height: 45px;
+    padding-top: 5px;
+    background-color: gray;
+    color: aliceblue;
+}
+.body{
+    display: flex;
+    height: 350px;
+    width: 80%;
+    padding-left: 10%;
+    border: 10px solid white;
+}
+.body .main{
+    flex: 8;
+    padding-top: 50px;
+    background-color: rgb(177, 177, 177);
+    border-right: 10px solid white;
+}
+.body .side{
+    flex: 2;
+    padding-top: 50px;
+    background-color: gray;
+}
+.footer{
+    background-color: rgb(50, 49, 49);
+    color: aliceblue;
+    height: 60px;
+    padding-top: 20px;
+}
+.header1{
+    height: 100px;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 50px;
+    border-bottom: 10px solid white;
+}
+.navbar1{
+    height: 45px;
+    padding-top: 5px;
+    background-color: gray;
+    color: aliceblue;
+    border-bottom: 10px solid white;
+}
+.body1{
+    height: 290px;
+    border-bottom: 10px solid white;
+    background-color: rgb(189, 188, 188);
+    position: relative;
+}
+.sshow{
+    position: absolute;
+    height: 100px;
+    padding-top: 50px;
+    width: 97%;
+    top: 10px;
+    left: 20px;
+    background-color: rgb(50, 49, 49); 
+}
+.box1{
+    position: absolute;
+    height: 80px;
+    background-color: white;
+    width: 30%;
+    top: 63%;
+    left: 2%;
+}
+.box2{
+    position: absolute;
+    height: 80px;
+    background-color: white;
+    width: 30%;
+    top: 63%;
+    left: 35%;
+}
+.box3{
+    position: absolute;
+    height: 80px;
+    background-color: white;
+    width: 30%;
+    top: 63%;
+    left: 68%;
+}
+.footer1{
+    background-color: rgb(50, 49, 49);
+    color: aliceblue;
+    height: 60px;
+    padding-top: 20px;
+}

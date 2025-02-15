@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 600px;
+    border: 2px solid black;
+    text-align: center;
+}
+.header{
+    height: 68px;
+    background-color: cadetblue;
+    padding-top: 30px;
+    border: 2px solid black;
+}
+.icpyhimgca{
+    display: flex;
+    height: 300px;
+}
+.icpyhimgca .icpy{
+    flex: 7;
+    background-color: darkcyan;
+    padding-top: 125px;
+}
+.icpyhimgca .himgca{
+    flex-direction: column;
+    flex: 3;
+}
+.icpyhimgca .himgca .himg{
+    height: 150px;
+    padding-top: 100px;
+    background-color: cadetblue;
+}
+.icpyhimgca .himgca .callaction{
+    height: 45px;
+    padding-top: 5px;
+    background-color: greenyellow;
+}
+.features{
+    height: 73px;
+    border: 2px solid black;
+    padding-top: 25px;
+    background-color: cadetblue;
+}
+.morecpyca{
+    display: flex;
+    height: 45px;
+}
+.morecpyca .morecopy{
+    flex: 7;
+    background-color: darkcyan;
+    padding-top: 5px;
+}
+.morecpyca .callaction{
+    flex: 3;
+    padding-top: 5px;
+    background-color: greenyellow;
+}
+.footer{
+    height: 43px;
+    padding-top: 5px;
+    border: 2px solid black;
+    background-color: darkcyan;
+}
+.logo{
+    height: 43px;
+    padding-top: 5px;
+    border: 2px solid black;
+}
+.action{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    gap: 10px;
+}
+.features1{
+    height: 148px;
+    padding-top: 100px;
+    border: 2px solid black;
+}
+.threecols{
+    display: flex;
+    height: 198px;
+    border: 2px solid black;
+}
+.footer2{
+    height: 48px;
+    border: 2px;
+}
+.col1{
+    padding-top: 75px;
+    flex: 2;
+    border: 2px solid black;
+}
+.col2{
+    padding-top: 75px;
+    flex: 2;
+    border: 2px solid black;
+}
+.col3{
+    padding-top: 75px;
+    flex: 2;
+    border: 2px solid black;
+}

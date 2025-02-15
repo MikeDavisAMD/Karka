@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        welcome to Falcon's Clikz
+    </h1>
+    <img id="image" src="../Falcon's Clikz logo copy.jpg" onmouseover="mouseenter()" onmouseout="mouseleave()" alt="" style="height: 50px; width: 50px; margin-left: 100px;">
+    <script>
+        function mouseenter(){
+            document.getElementById("image").style.height = "100px"
+            document.getElementById("image").style.width = "100px"
+        }
+        function mouseleave(){
+            document.getElementById("image").style.height = "50px"
+            document.getElementById("image").style.width = "50px"
+        }
+        function mouseUp(){
+            document.getElementById("head").style.color = "blue"
+        }
+        function mouseDown(){
+            document.getElementById("head").style.color = "red"
+        }
+    </script>
+</body>
+</html>

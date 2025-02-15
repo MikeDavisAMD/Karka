@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form task</title>
+</head>
+<body>
+    <label>First Name: </label>
+    <input type="text" id="fname" placeholder="Enter the first name">
+    <br>
+    <label>Last Name: </label>
+    <input type="text" id="lname" placeholder="Enter the last name">
+    <br>
+    <label>Number: </label>
+    <input type="number" id="num" placeholder="Enter 10 digit mobile number">
+    <br>
+    <label>Email: </label>
+    <input type="email" id="mail" placeholder="example@mail.com">
+    <br>
+    <label>Password: </label>
+    <input type="password" name="password" id="password" placeholder="enter a valid password">
+    <br>
+    <label>Gender: </label>
+    <input type="radio" name="gender" id="Male" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" name="gender" id="Female" value="Female">
+    <label for="Female">Female</label>
+    <input type="radio" name="gender" id="Others" value="Others">
+    <label for="Others">Others</label>
+    <br>
+    <label for="dropdown">Developer: </label>
+    <select class="drop" id="drop">
+        <option value="Default"></option>
+        <option value="Full-Stack">Full-Stack</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+    </select>
+    <br>
+    <table>
+        <tr>
+            <td rowspan="10" style="vertical-align: top;"><label>Skills:</label></td>
+            <td>
+                <input type="checkbox" Value="HTML" name="skills">
+                <label for="Skills">HTML</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="CSS" name="skills">
+                <label for="Skills">CSS</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="React JS" name="skills">
+                <label for="Skills">React JS</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="Angular JS" name="skills">
+                <label for="Skills">Angular JS</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="Python" name="skills">
+                <label for="Skills">Python</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" value="JavaScript" name="skills">
+                <label for="Skills">JavaScripts</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="Node JS" name="skills">
+                <label for="Skills">Node JS</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="Express" name="skills">
+                <label for="Skills">Express</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="Mongo DB" name="skills">
+                <label for="Skills">Mongo DB</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" Value="My SQL" name="skills">
+                <label for="Skills">my SQL</label><br>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="handleClick()">SUBMIT</button>
+    <br>
+    <div id="div">
+
+    </div>
+    <ol id="list">
+
+    </ol>
+    <script>
+        function handleClick(){
+            let fname=document.getElementById("fname").value
+            let lname=document.getElementById("lname").value
+            let number=document.getElementById("num").value
+            let email=document.getElementById("mail").value
+            let pass=document.getElementById("password").value
+            let password="*".repeat(pass.length)
+            let g=document.getElementsByName("gender")
+            let gender=""
+            for(i=0;i<g.length;i++){
+                if(g[i].checked){
+                    gender+=g[i].value
+                }
+            }
+            let drop=document.getElementById("drop").value
+            let d=document.getElementById("div")
+            d.innerHTML=""
+            let arr=[fname, lname, number, email, password, gender, drop]
+            for(i=0;i<arr.length;i++){
+                let p=document.createElement("p")
+                p.innerHTML=arr[i]
+                d.appendChild(p)
+            }
+            let skills=document.getElementsByName("skills")
+            let l=document.getElementById("list")
+            l.innerHTML=""
+            for(i=0;i<skills.length;i++){
+                if(skills[i].checked){
+                    let li=document.createElement("li")
+                    li.innerHTML=skills[i].value
+                    l.appendChild(li)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

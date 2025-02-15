@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="gender">Male</label><br>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="gender">Female</label><br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter a valid mail ID eg: example@gmail.com" id="email"><br>
+        <label>Password:</label><br>
+        <input type="password" id="password" placeholder="Enter a password"><br>
+        <label>Mobile Number:</label><br>
+        <input type="number" id="number" maxlength="10" placeholder="enter a 10 digit mobile number"><br>
+        <br>
+        <label>Developer:</label>
+        <select id="drop">
+            <option value="default"></option>
+            <option value="Fullstack">Full-Stack</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+        </select><br>
+        <br>
+        <label>Skillset:</label><br>
+        <input type="checkbox" Value="HTML" name="skills">
+        <label for="Skills">HTML</label><br>
+        <input type="checkbox" Value="CSS" name="skills">
+        <label for="Skills">CSS</label><br>
+        <input type="checkbox" Value="React JS" name="skills">
+        <label for="Skills">React JS</label><br>
+        <input type="checkbox" Value="Angular JS" name="skills">
+        <label for="Skills">Angular JS</label><br>
+        <input type="checkbox" Value="Python" name="skills">
+        <label for="Skills">Python</label><br>
+        <input type="checkbox" Value="Node JS" name="skills">
+        <label for="Skills">Node JS</label><br>
+        <input type="checkbox" Value="Express" name="skills">
+        <label for="Skills">Express</label><br>
+        <input type="checkbox" Value="Mongo DB" name="skills">
+        <label for="Skills">Mongo DB</label><br>
+        <input type="checkbox" Value="My SQL" name="skills">
+        <label for="Skills">my SQL</label><br>
+        <br>
+        <button onclick="clickHandle(event)">SUBMIT</button>
+    </form>
+    <div id="div">
+
+    </div>
+    <ol id="olist">
+
+    </ol>
+    <script>
+        function clickHandle(e){
+            e.preventDefault()
+            var name=document.getElementById("name").value
+            var email=document.getElementById("email").value
+            var password=document.getElementById("password").value
+            var mobile=document.getElementById("number").value
+            var g=document.getElementsByName("gender")
+            var gender=""
+            for(i=0;i<g.length;i++){
+                if(g[i].checked){
+                    gender+=g[i].value
+                }
+            }
+            var drop=document.getElementById("drop").value
+            var d=document.getElementById("div")
+            d.innerHTML=""
+            var arr=[name, email, password, gender, mobile,drop]
+            for(i=0;i<arr.length;i++){
+                h=document.createElement("h4")
+                h.innerHTML=arr[i]
+                d.appendChild(h)
+            }
+            var skills=document.getElementsByName("skills")
+            var list=document.getElementById("olist")
+            list.innerHTML=""
+            for(i=0;i<skills.length;i++){
+                if(skills[i].checked){
+                    var li=document.createElement("li")
+                    li.innerHTML=skills[i].value
+                    list.appendChild(li)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

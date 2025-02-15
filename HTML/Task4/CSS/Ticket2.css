@@ -1,0 +1,195 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 250px;
+    width: 75%;
+    background-color: rgb(220, 218, 218);
+    position: relative;
+    margin: 10% 12%;
+    border-radius: 35px;
+    box-shadow: 0px 3px 6px rgb(154, 153, 153);
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    height: 250px;
+    width: 70%;
+}
+.barcode1{
+    transform: rotate(90deg);
+    position: absolute;
+    left: -3%;
+    bottom: 35%;
+}
+.barcode2{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+.dot1{
+    position: absolute;
+    top: -7px;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot2{
+    position: absolute;
+    top: 19px;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot3{
+    position: absolute;
+    top: 47px;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot4{
+    position: absolute;
+    top: 30%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot5{
+    position: absolute;
+    top: 42%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot6{
+    position: absolute;
+    top: 54%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot7{
+    position: absolute;
+    top: 66%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot8{
+    position: absolute;
+    top: 77%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot9{
+    position: absolute;
+    top: 87%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.dot10{
+    position: absolute;
+    top: 97%;
+    left: 69.3%;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.header{
+    height: 80px;
+    display: flex;
+}
+.header .sec1{
+    flex: 7;
+    height: 80px;
+    position: relative;
+}
+.header .sec1 p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 120px;
+    color: white;
+}
+.header .sec2{
+    flex: 3;
+    background-color: rgb(46, 23, 222);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.header .sec2 p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.header .fg{
+    background-color: rgb(0, 191, 255);
+    height: 80px;
+    width: 70%;
+    position: absolute;
+    opacity: 0.5;
+}
+.body{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.body .sideA{
+    flex: 7;
+    position: relative;
+}
+.body .sideB{
+    flex: 3;
+    padding-left: 120px;
+}
+.sideA .sec1{
+    display: flex;
+    position: absolute;
+    gap: 30px;
+    padding-left: 120px;
+    height: 50px;
+}
+.sideA .sec2{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.sideA .sec3{
+    display: flex;
+    position: absolute;
+    padding-left: 120px;
+    top: 80%;
+    gap: 75px;
+}
+.sideB .sec2{
+    display: flex;
+    gap: 30px;
+}

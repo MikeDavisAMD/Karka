@@ -1,0 +1,13 @@
+{
+    "product":{
+        "Name":"Apple",
+        "Price":"100",
+        "Weight":"100kg"
+    },
+    "person":{
+        "Name":"Mike Davis",
+        "Place":"Nagercoil",
+        "Number":"7708172413"
+    }
+    
+}

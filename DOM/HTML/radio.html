@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+</head>
+<body>
+    <label>Gender: </label>
+    <input type="radio" class="gender" id="Male" name="gender" value="Male">
+    <label>Male</label>
+    <input type="radio" class="gender" id="Female" name="gender" value="Female">
+    <label>Female</label>
+    <input type="radio" class="gender" name="gender" id="others" value="others">
+    <label>Others</label><br>
+    <label>Skillset:</label><br>
+    <input type="checkbox" Value="HTML" class="skills">
+    <label for="Skills">HTML</label><br>
+    <input type="checkbox" Value="CSS" class="skills">
+    <label for="Skills">CSS</label><br>
+    <input type="checkbox" Value="React JS" class="skills">
+    <label for="Skills">React JS</label><br>
+    <input type="checkbox" Value="Angular JS" class="skills">
+    <label for="Skills">Angular JS</label><br>
+    <input type="checkbox" Value="Python" class="skills">
+    <label for="Skills">Python</label><br>
+    <input type="checkbox" Value="Node JS" class="skills">
+    <label for="Skills">Node JS</label><br>
+    <input type="checkbox" Value="Express" class="skills">
+    <label for="Skills">Express</label><br>
+    <input type="checkbox" Value="Mongo DB" class="skills">
+    <label for="Skills">Mongo DB</label><br>
+    <input type="checkbox" Value="My SQL" class="skills">
+    <label for="Skills">my SQL</label><br>
+    <br>
+    <button onclick="clickHandle()">SUBMIT</button>
+    <br>
+    <div id="div">
+        
+    </div>
+    <ol id="olist">
+
+    </ol>
+    <script>
+        function clickHandle(){
+            let gender=document.getElementsByClassName("gender")
+            let skills=document.getElementsByClassName("skills")
+            let d=document.getElementById("div")
+            let list=document.getElementById("olist")
+            for(let i=0;i<gender.length;i++){
+                if(gender[i].checked){
+                    let h=document.createElement("h4")
+                    h.innerHTML=gender[i].value
+                    d.appendChild(h)
+                }
+            }
+            for(let j=0;j<skills.length;j++){
+                if(skills[j].checked){
+                    let li=document.createElement("li")
+                    li.innerHTML=skills[j].value
+                    list.appendChild(li)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
