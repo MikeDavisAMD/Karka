@@ -4,12 +4,19 @@
     width: 40%;
     border: 2px solid black;
     border-radius: 20px;
-    background-color: lightcyan;
+    background-color: cyan;
     box-shadow: 10px 20px rgb(186, 186, 186);
+    overflow: auto;
+    scrollbar-width: none;
+}
+h1{
+    text-align: center;
+    height: 40px;
+    background-color: orange;
+    padding-top: 10px;
 }
 input {
-    margin-top: 5%;
-    margin-left: 26%;
+    margin-left: 30%;
     padding: 10px 5px;
     border-radius: 20px;
     border: transparent;
@@ -18,7 +25,7 @@ input {
     margin-left: 25%;
     padding-top: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 button{
     padding: 5px 10px;
