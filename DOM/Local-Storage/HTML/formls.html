@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/formls.css">
+    <title>Form with Storage</title>
+</head>
+<body>
+    <div class="div">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" class="input" placeholder="Enter your First Name">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" class="input" placeholder="Enter your Last Name"><br>
+        <label for="mail">Email</label>
+        <input type="email" name="mail" class="input" id="mail" placeholder="example@mail.com"><br>
+        <label for="password">Password</label>
+        <input type="password" id="pwd" class="input" placeholder="Enter a valid Password"><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="others" value="others">
+        <label for="others">Others</label><br>
+        <table>
+            <tbody>
+                <tr><td rowspan="10" style="vertical-align: top;"><label for="skills">Skills</label></td></tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="HTML" id="HTML"></td>
+                    <td><label for="html">HTML</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="CSS" id="CSS"></td>
+                    <td><label for="css">CSS</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="JavaScript" id="JavaScript"></td>
+                    <td><label for="js">JavaScript</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="React JS" id="React JS"></td>
+                    <td><label for="react">React JS</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="Angualar JS" id="Angualar JS"></td>
+                    <td><label for="angular">Angualar JS</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="PHP" id="PHP"></td>
+                    <td><label for="php">PHP</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="Node JS" id="Node JS"></td>
+                    <td><label for="node">Node JS</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="My SQL" id="My SQL"></td>
+                    <td><label for="sql">My SQL</label></td>
+                </tr>
+                <tr>
+                    <td><input name="skills" type="checkbox" value="Firebase" id="Firebase"></td>
+                    <td><label for="firebase">Firebase</label></td>
+                </tr>
+            </tbody>
+        </table>
+        <label for="country">Country</label>
+        <select name="country" id="country" class="input">
+            <option value="default">Please Select a Country</option>  
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Bahrain">Bahrain</option>
+            <option value="China">China</option>
+            <option value="Denmark">Denmark</option>
+            <option value="England">England</option>
+            <option value="France">France</option>
+            <option value="Greece">Greece</option>
+            <option value="Greenland">Greenland</option>
+            <option value="Germany">Germany</option>
+            <option value="Hungary">Hungary</option>
+            <option value="India">India</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Japan">Japan</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Nepal">Nepal</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Oman">Oman</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Russia">Russia</option>
+            <option value="Spain">Spain</option>
+            <option value="Saudi-Arabia">Saudi-Arabia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Turkey">Turkey</option>
+            <option value="United States of America">United States of America</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Wales">Wales</option>
+            <option value="West Indies">West Indies</option>
+            <option value="Yemen">Yemen</option>
+            <option value="Zimbabwe">Zimbabwe</option>
+        </select><br>
+        <label for="comment">Comment</label><br>
+        <textarea class="input" id="comments" rows="10" cols="40" placeholder="enter your comments"></textarea><br>
+        <button onclick="clickHandle()">SUBMIT</button>
+    </div>
+    <script src="../JS/formls.js"></script>
+</body>
+</html>
