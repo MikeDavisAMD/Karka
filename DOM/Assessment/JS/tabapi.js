@@ -8,8 +8,8 @@ fetch("https://jsonplaceholder.typicode.com/todos").then(output => output.json()
         <td>${out[i].id}</td>
         <td>${out[i].title}</td>
         <td>${out[i].completed}</td>
-        <td><button onclick="edit(this)">EDIT</button></td>
-        <td><button onclick="del(this)">DELETE</button></td>`
+        <td><button onclick="edit(this)"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button onclick="del(this)"><i class="fa-solid fa-trash"></i></button></td>`
         body.appendChild(row)
     }
 })
@@ -17,16 +17,20 @@ function edit(btn){
     let row=btn.parentNode.parentNode
     let title=row.children[3]
     let completed=row.children[4]
-    if(btn.textContent === "EDIT"){
+    if(btn.querySelector("i").className === "fa-solid fa-pen-to-square"){
         title.contentEditable = true
         completed.contentEditable = true
-        btn.textContent = "SAVE"
+        btn.querySelector("i").className = "fa-solid fa-floppy-disk"
     } else {
         title.contentEditable = false
         completed.contentEditable = false
-        btn.textContent = "EDIT"
+        btn.querySelector("i").className = "fa-solid fa-pen-to-square"
     }
 }
 function del(btn){
     btn.parentNode.parentNode.remove()
+    let row=document.querySelectorAll("#tbd tr")
+    for(i=0;i<row.length;i++){
+        row[i].children[0].textContent=i+1
+    }
 }
