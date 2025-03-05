@@ -19,3 +19,4 @@ const e = a.map(data => {
     return data-1
 })
 console.log(e)
+// task4.js
