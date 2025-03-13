@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Task</title>
+</head>
+<body>
+    <div>
+        <button onclick="clickHandle()">Click to change color</button>
+    </div>
+    <script>
+        const clickHandle = () =>{
+            const a = setInterval (() => {
+                document.querySelector("body").style.backgroundColor="red"
+            },2000);
+            setTimeout (() =>{
+                clearInterval(a);
+                document.querySelector("body").style.backgroundColor="white";
+            },5000);
+        }
+    </script>
+</body>
+</html>
