@@ -65,7 +65,29 @@ console.log(t11.replaceAll('apple','orange'))
 const t12=['apple', 'banana', 'cherry']
 console.log(t12.includes('banana'))
 // Task 13: Async, await, promise, fetch, axios
+async function fetchData() {
+    try{
+        let response = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+        let data = await response.json()
+        console.log(data)
+    } catch(error){
+        console.log("Error:",error)
+    }
+}
+fetchData()
 // Task 14: Exception Handling
+const exHandle = (a,b) => {
+    try{
+        if(b==0){
+            throw new Error("Division by zero is not allowed.")
+        }
+        return a/b
+    } catch(error) {
+        return error.message
+    }
+}
+console.log(exHandle(4,2))
+console.log(exHandle(4,0))
 // Task 15: Template Literals
 const t15 = {
     Name:'John',
@@ -102,4 +124,108 @@ const t21 = ['apple', 'bananas', 'cherry', 'date']
 console.log(t21.reduce((acc,num) => acc.length > num.length ? acc : num))
 // Task 22: Flatten Array
 const t22=[[1, 2, 3], [4, 5], [6, 7, 8, 9]]
-const flat = (arr => arr.reduce)
+const flat = (arr => arr.reduce((acc,num)=> acc.concat(num),[]))
+console.log(flat(t22))
+// Task 23: Count Occurrences
+const t23 = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+const count = (fruits => fruits.reduce((acc,ele) => {
+    acc[ele]=(acc[ele] || 0)+1;
+    return acc;
+},{}))
+console.log(count(t23))
+// Task 24: Group by Property
+const people = [
+    { name: 'Alice', age: 21 },
+    { name: 'Bob', age: 25 },
+    { name: 'Charlie', age: 21 },
+    { name: 'David', age: 25 },
+    { name: 'Eve', age: 22 }
+];
+const groupBy = ((data,prop) => data.reduce((acc,ele)=> {
+    const key = ele[prop]
+    !acc[key] ? acc[key] = [] : ""
+    acc[key].push(ele)
+    return acc
+},{}))
+console.log(groupBy(people,'age'))
+// Task 25: Calculate Average
+const t25 = [10, 20, 30, 40, 50]
+const avg = (avg => avg.reduce((acc,num)=>acc+num,0)/avg.length)
+console.log(avg(t25))
+// Task 26: Total Price of Items in Cart
+const cart = [
+    { item: 'apple', price: 1.5 },
+    { item: 'banana', price: 2.0 },
+    { item: 'orange', price: 1.25 }
+];
+const calculateTotal = (data => data.reduce((acc,num)=>acc+num.price,0))
+console.log(calculateTotal(cart))
+// Task 27: Find First Even Number
+const t27 = [1, 3, 7, 10, 2]
+const findEven = (data => data.find(element => element%2==0))
+console.log(findEven(t27))
+// Task 27: Find Student by Name
+const student = [
+    { name: 'Alice', age: 21 },
+    { name: 'Bob', age: 25 },
+    { name: 'Charlie', age: 23 }
+];
+const findStudentByName = ((data,key) => data.find(data => data.name === key))
+console.log(findStudentByName(student,'Bob'))
+// Task 29: Find Product by ID
+const products = [
+    { id: 101, name: 'Laptop' },
+    { id: 102, name: 'Phone' },
+    { id: 103, name: 'Tablet' }
+];
+const findProductById =((data,key) => data.find(data => data.id === key))
+console.log(findProductById(products, 102))
+// Task 30: Find Overdue Task
+const tasks = [
+    { taskName: 'Task 1', dueDate: '2023-06-01' },
+    { taskName: 'Task 2', dueDate: '2024-05-01' },
+    { taskName: 'Task 3', dueDate: '2024-01-01' }
+];
+const findOverdueTask = ((data,date) => data.find(data => data > date))
+console.log(findOverdueTask(tasks,'2023-08-08'))
+// Task 31: Find First Positive Number
+const t31 = [-5, -3, 0, 9, 2]
+const t31o = (data => data.find(data => data>0))
+console.log(t31o(t31))
+// Task 32: Find Book by Title
+const books = [
+    { title: '1984', author: 'George Orwell' },
+    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+    { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' }
+];
+const findBookByTitle = ((data,key) => data.find(data => data.title===key))
+console.log(findBookByTitle(books, '1984'))
+// Task 33: Find Employee by ID
+const employees = [
+    { id: 1, name: 'Alice', position: 'Manager' },
+    { id: 2, name: 'Bob', position: 'Engineer' },
+    { id: 3, name: 'Charlie', position: 'Technician' }
+];
+const findEmployeeById = ((data,key) => data.find(data => data.id===key))
+console.log(findEmployeeById(employees, 2));
+// Task 34: Find First Prime Number
+const t34 = [4, 6, 8, 9, 11, 15]
+const prime = (num) => {
+    if(num<2) return false;
+    for(let i=2;i<=Math.sqrt(num);i++){
+        if(num%i===0) return false
+    }
+    return true
+}
+const t34o = (data => data.find(data => prime(data)))
+console.log(t34o(t34))
+// Task 35: Destructuring and Template Literals
+const t35 = { firstName: 'John', lastName: 'Doe', age: 30 };
+const {firstName:fname, lastName:lname, age:Age} = t35;
+const t35o = (() => console.log(`${fname} ${lname} is ${Age} years old.`))
+t35o()
+// Task 36: Array Methods and Arrow Functions
+const t36 = [1, 2, 3, 4, 5, 6]
+const t36o = (data => data.filter(data => data%2 == 0).map(data => data**2))
+console.log(t36o(t36))
+// Task 37: Default Parameters and Rest Parameters
