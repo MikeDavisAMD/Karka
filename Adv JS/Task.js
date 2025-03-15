@@ -229,3 +229,29 @@ const t36 = [1, 2, 3, 4, 5, 6]
 const t36o = (data => data.filter(data => data%2 == 0).map(data => data**2))
 console.log(t36o(t36))
 // Task 37: Default Parameters and Rest Parameters
+const t37o = ((sep,...rest)=>rest.join(sep))
+console.log(t37o('-','Apple','banana','cherry'))
+console.log(t37o(',','Apple','banana','cherry'))
+// Task 38: Spread Operator and Array Methods
+const t38a = [1, 2, 3];
+const t38b = [3, 4, 5];
+const t38o = ((a,b) => console.log([...new Set([...a,...b])]))
+t38o(t38a,t38b)
+// Task 39: Promises and Async/Await
+async function fetchTodo() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+    const data = await response.json()
+    console.log(data)
+}
+fetchTodo()
+// Task 40: Array Methods, Destructuring, and Reduce
+const t40 = [
+    { Name: 'Laptop', price: 1000 },
+    { Name: 'Phone', price: 500 },
+    { Name: 'Tablet', price: 700 }
+];
+const t40o = (arr) => {
+    const avg = arr.reduce((acc,{price}) => acc+price,0)/arr.length
+    console.log(arr.filter(({price}) => price>avg).map(({Name})=>Name))
+}
+t40o(t40)
