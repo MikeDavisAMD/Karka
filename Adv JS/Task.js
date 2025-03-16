@@ -10,15 +10,9 @@ function task1fn() {
 }
 task1fn()
 // arrow function
-const task1arr = () => {
-    let a=[1, 2, 3, 4, 5] 
-    let b=[]
-    for(i=0;i<a.length;i++){
-        b.push(a[i]**2)
-    }
-    console.log(b)
-}
-task1arr()
+const t1 = [1,2,3,4,5]
+const task1arr = (arr => arr.map(data => data**2))
+console.log(task1arr(t1))
 // Task 2: Spread (...) Operator
 const obj1 = { a: 1, b: 2 };
 const obj2 = { c: 3, d: 4 };
