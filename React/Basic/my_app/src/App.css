@@ -1,0 +1,16 @@
+.One{
+    background-color: blue;
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+.One h1{
+    padding-top: 20px;
+}
+.Two{
+    background-color: cyan;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
