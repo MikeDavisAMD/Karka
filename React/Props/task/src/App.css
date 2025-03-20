@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Pacifico&family=Tektur:wght@400..900&family=Varela+Round&display=swap');
+* {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.head{
+    height: 80px;
+    background-color: blue;
+    color: azure;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 50px;
+}
+.div th{
+    background-color: brown;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+.div td{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}

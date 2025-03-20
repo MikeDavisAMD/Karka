@@ -2,8 +2,12 @@ import React from 'react'
 
 export const Child = (props) => {
   return (
-    <div>
-        <table border={"2px"}>
+    <>
+    <div className='head'>
+        <h1>Table With React</h1>
+    </div>
+    <div className='div'>
+        <table>
             <thead>
                 <tr>
                     <th>S.No.</th>
@@ -26,5 +30,6 @@ export const Child = (props) => {
             </tbody>
         </table>
     </div>
+    </>
   )
 }
