@@ -19,9 +19,9 @@ export const Child = (props) => {
             </thead>
             <tbody>
                 {props.list.map((Name,index)=>(
-                    <tr>
+                    <tr key={Name.ID}>
                         <td>{index+1}</td>
-                        <td>{Math.floor(Math.random()*(99999-9999)+9999)}</td>
+                        <td>{Name.ID}</td>
                         <td>{Name.Name}</td>
                         <td>{Name.Age}</td>
                         <td>{Name.Place}</td>
