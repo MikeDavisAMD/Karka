@@ -11,11 +11,14 @@ export const Task1 = () => {
             <Grid item lg={2} md={2} sm={6} xs={12}>
               <Box sx={{height:{lg:"600px",md:"400px",sm:"200px",xs:"100px"}, backgroundColor:"#DDA0DD"}}></Box>
             </Grid>
-            <Grid item lg={8} md={8} sm={12} xs={12}>
-              <Box sx={{height:{lg:"600px",md:"400px",sm:"180px",xs:"200px"}, backgroundColor:"white"}}></Box>
+            <Grid item lg={8} md={8} xs={12} sx={{display:{lg:"block",md:"block",sm:"none",xs:"block"}}}>
+              <Box sx={{height:{lg:"600px",md:"400px",sm:"200px",xs:"200px"}, backgroundColor:"white"}}></Box>
             </Grid>
             <Grid item lg={2} md={2} sm={6} xs={12}>
               <Box sx={{height:{lg:"600px",md:"400px",sm:"200px",xs:"100px"}, backgroundColor:"#F0E68C"}}></Box>
+            </Grid>
+            <Grid item sm={12} sx={{display:{lg:"none",md:"none",sm:"block",xs:"none"}}}>
+              <Box sx={{height:{sm:"180px"}, backgroundColor:"white"}}></Box>
             </Grid>
         </Grid>
         <Grid item lg={12} md={12} sm={12} xs={12}>
