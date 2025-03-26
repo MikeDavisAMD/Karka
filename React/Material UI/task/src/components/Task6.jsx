@@ -15,21 +15,21 @@ export const Task6 = () => {
             <Grid item lg={1.5} md={1.5} sm={1.5} xs={12}>
                 <Box sx={{height:{lg:"25px",md:"25px",sm:"25px",xs:"20px"},backgroundColor:"#1ca9c9",margin:"5px",textAlign:"center",padding:"10px",borderRadius:"5px"}}>
                     <Typography variant='p'>
-                        Link 1
+                        Link 2
                     </Typography>
                 </Box>
             </Grid>
             <Grid item lg={1.5} md={1.5} sm={1.5} xs={12}>
                 <Box sx={{height:{lg:"25px",md:"25px",sm:"25px",xs:"20px"},backgroundColor:"#1ca9c9",margin:"5px",textAlign:"center",padding:"10px",borderRadius:"5px"}}>
                     <Typography variant='p'>
-                        Link 1
+                        Link 3
                     </Typography>
                 </Box>
             </Grid>
             <Grid item lg={1.5} md={1.5} sm={1.5} xs={12}>
-                <Box sx={{height:{lg:"40px",md:"25px",sm:"25px",xs:"20px"},backgroundColor:"#1ca9c9",margin:"5px",textAlign:"center",padding:"10px",borderRadius:"5px"}}>
+                <Box sx={{height:{lg:"25px",md:"25px",sm:"25px",xs:"20px"},backgroundColor:"#1ca9c9",margin:"5px",textAlign:"center",padding:"10px",borderRadius:"5px"}}>
                     <Typography variant='p'>
-                        Link 1
+                        Link 4
                     </Typography>
                 </Box>
             </Grid>
