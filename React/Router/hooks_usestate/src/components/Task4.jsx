@@ -4,6 +4,7 @@ export const Task4 = () => {
     const [inp,setInputValue]=useState('')
     const valueChange=(event)=>{
         setInputValue(event.target.value)
+        console.log("Mike Davis")
     }
   return (
     <div>

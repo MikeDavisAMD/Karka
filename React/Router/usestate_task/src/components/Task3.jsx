@@ -6,15 +6,21 @@ export const Task3 = () => {
     const navigate = useNavigate()
     const [value,setValue]=useState(5)
     const clickHandle = () => {
-        setTimeout(()=>{
-            navigate('/welcome')
-        },5000) 
+        const interval = setInterval(()=>{
+            setValue(count => {
+                if (count === 1) {
+                    clearInterval(interval);
+                    navigate('/Welcome');
+                }
+                return count-1;
+            })
+        },1000) 
     }
     return (
     <Grid container>
         <Grid size={{lg:12,md:12,sm:12,xs:12}}>
             <Box sx={{textAlign:"center"}}>
-                <h1>Welcome</h1>
+                <h1 style={{margin:"0px"}}>Welcome</h1>
             </Box>
         </Grid>
         <Grid size={{lg:12,md:12,sm:12,xs:12}}>
